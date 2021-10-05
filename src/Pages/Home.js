@@ -8,7 +8,7 @@ import I002 from "../Image/002.png";
 import I003 from "../Image/003.png";
 import I004 from "../Image/004.png";
 import I005 from "../Image/005.png";
-import Footer from "../Component/Footer"
+// import Footer from "../Component/Footer";
 
 class Home extends Component {
   render() {

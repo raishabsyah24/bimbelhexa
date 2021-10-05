@@ -4,8 +4,12 @@ import Button from "react-bootstrap/Button";
 import "../CSS/Login.css";
 
 export default function Register() {
+  const [firstname, setFisrtName] = useState("");
+  const [lastname, setLastName] = useState("");
+  const [tempatlahir, setTempatLahir] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [ulangipassword, setUlangiPassword] = useState("");
 
   function validateForm() {
     return email.length > 0 && password.length > 0;
@@ -18,31 +22,32 @@ export default function Register() {
   return (
     <div className="Login">
       <Form onSubmit={handleSubmit}>
-      <Form.Group size="lg" controlId="email">
+
+        <Form.Group size="lg" controlId="FirstName">
           <Form.Label>First Name</Form.Label>
           <Form.Control
             autoFocus
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="FirstName"
+            value={firstname}
+            onChange={(e) => setFisrtName(e.target.value)}
           />
         </Form.Group>
-        <Form.Group size="lg" controlId="email">
+        <Form.Group size="lg" controlId="LastName">
           <Form.Label>Last Name</Form.Label>
           <Form.Control
             autoFocus
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="LastName"
+            value={lastname}
+            onChange={(e) => setLastName(e.target.value)}
           />
         </Form.Group>
-        <Form.Group size="lg" controlId="email">
+        <Form.Group size="lg" controlId="TempatLahir">
           <Form.Label>Tempat Lahir</Form.Label>
           <Form.Control
             autoFocus
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="TempatLahir"
+            value={tempatlahir}
+            onChange={(e) => setTempatLahir(e.target.value)}
           />
         </Form.Group>
         <Form.Group size="lg" controlId="email">
@@ -62,12 +67,12 @@ export default function Register() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Form.Group size="lg" controlId="password">
+        <Form.Group size="lg" controlId="ulangi password">
           <Form.Label>Ulangi Password</Form.Label>
           <Form.Control
-            type="ulangi password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            type="Ulangipassword"
+            value={ulangipassword}
+            onChange={(e) => setUlangiPassword(e.target.value)}
           />
         </Form.Group>
         <Button block size="lg" type="submit" disabled={!validateForm()}>
