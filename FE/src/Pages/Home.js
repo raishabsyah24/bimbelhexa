@@ -26,7 +26,7 @@ class Home extends Component {
       slidesToScroll: 1
     };
     return (
-      <>
+      <div style={{backgroundColor:"blueviolet"}}>
         <div className="container">
           <Slider {...settings}>
             <div><img src={I001} alt="Credit to Joshua Earle on Unsplash" /></div>
@@ -43,7 +43,9 @@ class Home extends Component {
             <Col className="column1" xs={8}>
               <img src={I001} style={{ width: "100%" }} class="img-responsive" alt=""></img>
             </Col>
-            <Col className="column2"></Col>
+            <Col className="column2">
+              <h4>hello mau belajar gk</h4>
+            </Col>
           </Row>
           <Row style={{ margin: 10 }}>
             <Col className="column2" >1 of 3</Col>
@@ -58,7 +60,7 @@ class Home extends Component {
             <Col className="column2">2 of 3</Col>
           </Row>
         </Container>
-      </>
+      </div>
     );
   }
 }
