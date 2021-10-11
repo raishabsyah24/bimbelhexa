@@ -26,7 +26,7 @@ class Home extends Component {
       slidesToScroll: 1
     };
     return (
-      <div style={{backgroundColor:"blueviolet"}}>
+      <div>
         <div className="container">
           <Slider {...settings}>
             <div><img src={I001} alt="Credit to Joshua Earle on Unsplash" /></div>
