@@ -23,8 +23,8 @@ class Header extends Component {
             >
               <Navbar.Brand href="/">Bimbel Hexa</Navbar.Brand>
               <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Promo</Nav.Link>
-              <Nav.Link href="#action3">Beasiswa</Nav.Link>
+              <Nav.Link href="/promo">Promo</Nav.Link>
+              <Nav.Link href="/beasiswa">Beasiswa</Nav.Link>
               <Nav.Link href="#action4">Kompetisi Saint</Nav.Link>
               <NavDropdown title="Hexa Desk" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action5">Hexa Les</NavDropdown.Item>

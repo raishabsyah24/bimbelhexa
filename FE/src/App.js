@@ -4,6 +4,8 @@ import Login from './Pages/Login';
 import Home from './Pages/Home';
 import Header from './Component/Header';
 import Register from './Pages/Register';
+import Promo from './Pages/Promo';
+import Beasiswa from './Pages/Beasiswa';
 
 export default class App extends Component {
   render() {
@@ -18,6 +20,12 @@ export default class App extends Component {
           >
             <Header />
             <Switch>
+            <Route path="/beasiswa">
+                <Beasiswa/>
+              </Route>
+            <Route path="/promo">
+                <Promo/>
+              </Route>
             <Route path="/register">
                 <Register/>
               </Route>
@@ -42,6 +50,12 @@ export default class App extends Component {
           >
             <Header />
             <Switch>
+            <Route path="/beasiswa">
+                <Beasiswa/>
+              </Route>
+            <Route path="/promo">
+                <Promo/>
+              </Route>
             <Route path="/register">
                 <Register/>
               </Route>
